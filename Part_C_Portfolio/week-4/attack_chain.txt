@@ -1,0 +1,13 @@
+Week 4 Attack Chain
+
+Analyst: Nzeadibe Stanley
+
+23:13 - Started Nmap SYN scan against the target.
+
+23:14 - Performed service version detection using nmap -sV.
+
+23:15 - Identified FTP service running vsftpd 2.3.4.
+
+23:16 - Launched Metasploit and selected the vsftpd_234_backdoor module.
+
+23:17 - Executed the exploit and obtained a root shell (uid=0).

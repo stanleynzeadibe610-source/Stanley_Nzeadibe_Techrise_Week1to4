@@ -1,0 +1,98 @@
+Week 2 - IP Research
+
+Analyst: Nzeadibe Stanley
+Date: 28-06-2026
+Target IP: 185.220.101.47
+
+AbuseIPDB Findings
+------------------
+ISP: Network for Tor-Exit traffic
+Usage Type: Commercial
+Hostname: tor-exit-47.for-privacy.net
+Domain Name: for-privacy
+Country: Germany
+City: Berlin, State of Berlin
+Abuse Confidence score: 95%
+Summary
+-------
+The IP address has been reported for suspicious activity and should be treated as untrusted. Appropriate firewall monitoring and blocking should be considered where necessary.
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+
+
+WHOIS Findings
+----------------
+% The RIPE Database is subject to Terms and Conditions.
+% See https://docs.db.ripe.net/terms-conditions.html
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to '185.220.101.32 - 185.220.101.63'
+
+% Abuse contact for '185.220.101.32 - 185.220.101.63' is 'abuse@for-privacy.net'
+
+inetnum:        185.220.101.32 - 185.220.101.63
+descr:          Network for Tor-Exit traffic.
+remarks:        -----------------------------------
+remarks:        This network is used for Tor Exits.
+remarks:        We do not have any logs at all.
+remarks:        For more information please visit:
+remarks:        https://www.torproject.org
+remarks:        -----------------------------------
+remarks:        Dieses Netz hostet nur Tor-Exits.
+remarks:        Wir haben keinerlei Logs.
+remarks:        Mehr Informationen unter:
+remarks:        https://www.torproject.org
+remarks:        -----------------------------------
+netname:        TOR-EXIT
+country:        DE
+admin-c:        MM55214-RIPE
+tech-c:         MM55214-RIPE
+status:         ASSIGNED PA
+mnt-by:         ZWIEBELFREUNDE
+mnt-by:         FORPRIVACYNET-MNT
+created:        2021-08-31T19:06:52Z
+last-modified:  2021-08-31T19:06:52Z
+source:         RIPE
+org:            ORG-FA1168-RIPE
+
+organisation:   ORG-FA1168-RIPE
+org-name:       ForPrivacyNET
+org-type:       OTHER
+address:        Steinweg 18/20
+address:        53121 Bonn
+address:        Germany
+abuse-c:        ACRO42986-RIPE
+mnt-ref:        ZWIEBELFREUNDE
+mnt-by:         FORPRIVACYNET-MNT
+mnt-by:         ZWIEBELFREUNDE
+created:        2021-08-26T17:37:00Z
+last-modified:  2021-09-27T18:22:06Z
+source:         RIPE # Filtered
+
+person:         Marco Maske
+address:        Steinweg 18/20
+address:        53121 Bonn
+address:        Germany
+phone:          +49
+fax-no:         +49 228 92934 185.220.101.47.876
+nic-hdl:        MM55214-RIPE
+mnt-by:         FORPRIVACYNET-MNT
+created:        2021-08-26T20:47:07Z
+last-modified:  2021-09-27T17:52:49Z
+source:         RIPE
+
+% Information related to '185.220.101.0/24AS60729'
+
+route:          185.220.101.0/24
+origin:         AS60729
+mnt-by:         ZWIEBELFREUNDE
+mnt-by:         lir-de-renewablefreedom-1-MNT
+created:        2022-01-22T11:20:57Z
+last-modified:  2024-02-12T10:24:45Z
+source:         RIPE
+
+% This query was served by the RIPE Database Query Service version 1.122.1 (SHETLAND)
+
+

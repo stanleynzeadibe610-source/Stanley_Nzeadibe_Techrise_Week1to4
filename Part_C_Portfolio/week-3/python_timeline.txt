@@ -1,0 +1,14 @@
+=====================================
+Week 3 Python Security Timeline
+=====================================
+
+ATTACK ALERTS
+-----------------------------
+
+INCIDENT TIMELINE
+-----------------------------
+FAILED LOGIN: if "Failed password" in line:
+FAILED LOGIN: if "Failed password" in line:
+SUCCESSFUL LOGIN: elif "Accepted password" in line:
+SESSION OPENED: elif "session opened" in line:
+SUDO ACTIVITY: elif "sudo:" in line:

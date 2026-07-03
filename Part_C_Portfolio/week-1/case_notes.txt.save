@@ -1,0 +1,40 @@
+Cybersecurity Skills Portfolio
+Week 1 - Case Notes
+
+Student Name: Nzeadibe stanley
+Date: <paste the output of the date command>
+
+Machine Information
+-------------------
+Hostname: kali
+IP Address: 10.118.241.50
+
+Objective
+---------
+Perform a baseline security assessment of the Kali Linux system, document system information, identify potential security issues, review authentication logs, and record observations for further analysis.
+
+Activities Performed
+--------------------
+1. Verified the current logged-in user.
+2. Recorded the hostname and IP address.
+3. Performed a baseline inspection of the system.
+4. Examined authentication log entries.
+5. Identified repeated failed SSH login attempts.
+6. Observed successful logins after multiple failed attempts.
+7. Recorded sudo command usage.
+8. Prepared log evidence for the security portfolio.
+
+Baseline Findings
+-----------------
+- System booted normally.
+- Network connectivity confirmed.
+- SSH authentication events were successfully recorded.
+- Multiple failed SSH login attempts were observed from several IP addresses.
+- Successful logins occurred for authorized users.
+- Sudo activity was present for administrative users.
+- Additional investigation is recommended for repeated authentication failures.
+
+Conclusion
+----------
+The baseline assessment established the current security state of the system. 
+Sun 28 Jun 2026 19:27:34 WAT

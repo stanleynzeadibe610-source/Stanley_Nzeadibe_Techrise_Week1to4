@@ -1,0 +1,84 @@
+==========================================
+Week 3 Security Log Analysis Report
+Generated: Thu 02 Jul 2026 18:58:15 WAT
+==========================================
+
+Total Log Entries: 45
+
+==========================================
+FAILED LOGIN ATTEMPTS
+==========================================
+Jan 10 08:00:01 sshd: Failed password for root from 192.168.1.10 port 22
+Jan 10 08:00:02 sshd: Failed password for root from 192.168.1.10 port 22
+Jan 10 08:00:03 sshd: Failed password for admin from 192.168.1.11 port 22
+Jan 10 08:00:04 sshd: Failed password for ubuntu from 10.0.0.5 port 22
+Jan 10 08:02:40 sshd: Failed password for root from 203.0.113.45 port 22
+Jan 10 08:02:41 sshd: Failed password for root from 203.0.113.45 port 22
+Jan 10 08:02:42 sshd: Failed password for root from 203.0.113.45 port 22
+Jan 10 08:03:10 sshd: Failed password for admin from 172.16.0.8 port 22
+Jan 10 08:03:11 sshd: Failed password for admin from 172.16.0.8 port 22
+Jan 10 08:03:12 sshd: Failed password for admin from 172.16.0.8 port 22
+Jan 10 08:03:13 sshd: Failed password for admin from 172.16.0.8 port 22
+Jan 10 08:03:20 sshd: Failed password for ubuntu from 192.168.1.15 port 22
+Jan 10 08:03:21 sshd: Failed password for ubuntu from 192.168.1.15 port 22
+Jan 10 08:05:10 sshd: Failed password for root from 198.51.100.23 port 22
+Jan 10 08:05:11 sshd: Failed password for root from 198.51.100.23 port 22
+Jan 10 08:05:12 sshd: Failed password for root from 198.51.100.23 port 22
+Jan 10 08:05:13 sshd: Failed password for root from 198.51.100.23 port 22
+Jan 10 08:05:14 sshd: Failed password for root from 198.51.100.23 port 22
+Jan 10 08:07:00 sshd: Failed password for root from 10.10.10.10 port 22
+Jan 10 08:07:01 sshd: Failed password for root from 10.10.10.10 port 22
+Jan 10 08:07:02 sshd: Failed password for root from 10.10.10.10 port 22
+Jan 10 08:07:03 sshd: Failed password for root from 10.10.10.10 port 22
+Jan 10 08:07:04 sshd: Failed password for root from 10.10.10.10 port 22
+
+Total Failed Attempts: 23
+
+==========================================
+SUCCESSFUL LOGINS
+==========================================
+Jan 10 08:00:05 sshd: Accepted password for root from 10.0.0.5 port 22
+Jan 10 08:02:50 sshd: Accepted password for root from 203.0.113.45 port 22
+Jan 10 08:04:00 sshd: Accepted password for ubuntu from 192.168.1.15 port 22
+Jan 10 08:06:00 sshd: Accepted password for admin from 192.168.1.11 port 22
+Jan 10 08:07:05 sshd: Accepted password for root from 10.10.10.10 port 22
+
+Total Successful Logins: 5
+
+==========================================
+SUDO ACTIVITY
+==========================================
+Jan 10 08:02:10 sudo: john : TTY=pts/0 ; COMMAND=/bin/bash
+Jan 10 08:08:00 sudo: alice : TTY=pts/1 ; COMMAND=/usr/bin/apt update
+Jan 10 08:08:10 sudo: bob : TTY=pts/2 ; COMMAND=/usr/bin/systemctl restart ssh
+
+==========================================
+TOP ATTACKING IP ADDRESSES
+==========================================
+      5 198.51.100.23
+      5 10.10.10.10
+      4 172.16.0.8
+      3 203.0.113.45
+      2 192.168.1.15
+      2 192.168.1.10
+      1 192.168.1.11
+      1 10.0.0.5
+
+==========================================
+TARGETED USER ACCOUNTS
+==========================================
+     23 from
+
+==========================================
+SECURITY SUMMARY
+==========================================
+[MEDIUM] 10.0.0.5 generated 3 authentication events.
+[HIGH] 10.10.10.10 generated 8 authentication events.
+[MEDIUM] 172.16.0.8 generated 4 authentication events.
+[LOW] 192.168.1.10 generated 2 authentication events.
+[MEDIUM] 192.168.1.11 generated 3 authentication events.
+[MEDIUM] 192.168.1.15 generated 4 authentication events.
+[HIGH] 198.51.100.23 generated 5 authentication events.
+[HIGH] 203.0.113.45 generated 5 authentication events.
+
+Analysis completed successfully.

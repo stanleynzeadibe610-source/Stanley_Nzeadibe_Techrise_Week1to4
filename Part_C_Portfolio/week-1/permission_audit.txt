@@ -1,0 +1,85 @@
+Week 1 - Permission Audit
+
+Student Name: Nzeadibe stanley
+Date: 28/06/2026
+
+Objective
+---------
+Identify files with special permissions (SUID/SGID), review sensitive file permissions, and document security observations.
+
+Current User
+------------
+kali
+
+Hostname
+--------
+kali
+
+IP Address
+----------
+172.20.10.4 172.17.0.6 
+
+Top SUID Files
+--------------
+/snap/core20/2866/usr/bin/chfn
+/snap/core20/2866/usr/bin/chsh
+/snap/core20/2866/usr/bin/gpasswd
+/snap/core20/2866/usr/bin/mount
+/snap/core20/2866/usr/bin/newgrp
+/snap/core20/2866/usr/bin/passwd
+/snap/core20/2866/usr/bin/su
+/snap/core20/2866/usr/bin/sudo
+/snap/core20/2866/usr/bin/umount
+/snap/core20/2866/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/2866/usr/lib/openssh/ssh-keysign
+/snap/core18/2999/bin/mount
+/snap/core18/2999/bin/ping
+/snap/core18/2999/bin/su
+/snap/core18/2999/bin/umount
+/snap/core18/2999/usr/bin/chfn
+/snap/core18/2999/usr/bin/chsh
+/snap/core18/2999/usr/bin/gpasswd
+/snap/core18/2999/usr/bin/newgrp
+/snap/core18/2999/usr/bin/passwd
+
+Top SGID Files
+--------------
+/snap/core20/2866/usr/bin/chage
+/snap/core20/2866/usr/bin/expiry
+/snap/core20/2866/usr/bin/ssh-agent
+/snap/core20/2866/usr/sbin/pam_extrausers_chkpwd
+/snap/core20/2866/usr/sbin/unix_chkpwd
+/snap/core18/2999/sbin/pam_extrausers_chkpwd
+/snap/core18/2999/sbin/unix_chkpwd
+/snap/core18/2999/usr/bin/chage
+/snap/core18/2999/usr/bin/expiry
+/snap/core18/2999/usr/bin/ssh-agent
+/snap/core18/2999/usr/bin/wall
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/x86_64-linux-gnu/utempter/utempter
+/usr/lib/virtualbox/VBoxNetAdpCtl
+/usr/lib/virtualbox/VBoxHeadless
+/usr/lib/virtualbox/VBoxNetNAT
+/usr/lib/virtualbox/VBoxNetDHCP
+/usr/lib/virtualbox/VirtualBoxVM
+/usr/lib/virtualbox/VBoxSDL
+/usr/bin/crontab
+
+Sensitive File Permissions
+--------------------------
+-rw-r--r-- 1 root root   1369 Jun 26 11:31 /etc/group
+-rw-r--r-- 1 root root   3307 Jun 26 11:31 /etc/passwd
+-rw-r----- 1 root shadow 1488 Jun 26 11:31 /etc/shadow
+
+Classwork on permissions:
+
+Why Permission Numbers Work (Octal)
+Permission Binary Octal
+--- 000 0
+--x 001 1
+-w- 010 2
+-wx 011 3
+r-- 100 4
+r-x 101 5
+rw- 110 6
+rwx 111 7

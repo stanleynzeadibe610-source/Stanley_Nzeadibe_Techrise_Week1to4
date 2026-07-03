@@ -1,0 +1,57 @@
+Week 2 - STRIDE Threat Model
+
+
+Target:
+Web Login Page
+
+S - Spoofing
+Threat:
+An attacker steals user credentials or session cookies to impersonate a legitimate user.
+
+Mitigation:
+Enable MFA, secure session cookies, and strong password policies.
+
+----------------------------------------------------
+
+T - Tampering
+Threat:
+An attacker modifies hidden form values or HTTP requests before submission.
+
+Mitigation:
+Validate all input server-side and use signed tokens.
+
+----------------------------------------------------
+
+R - Repudiation
+Threat:
+A user denies performing a login because there are no audit logs.
+
+Mitigation:
+Maintain immutable audit logs with timestamps and source IP addresses.
+
+----------------------------------------------------
+
+I - Information Disclosure
+Threat:
+Detailed login errors reveal whether a username exists.
+
+Mitigation:
+Display generic authentication error messages and encrypt sensitive data.
+
+----------------------------------------------------
+
+D - Denial of Service
+Threat:
+Attackers flood the login page with thousands of authentication requests.
+
+Mitigation:
+Rate limiting, CAPTCHA, firewall filtering, and IP blocking.
+
+----------------------------------------------------
+
+E - Elevation of Privilege
+Threat:
+A normal user accesses administrator pages by manipulating URLs.
+
+Mitigation:
+Implement server-side authorization checks on every request.
